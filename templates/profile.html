@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Профиль</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="text-align: center;">
+            <h2>Добро пожаловать в ваш профиль!</h2>
+            
+            <img id="avatar" 
+                 src="{{ avatar_url }}" 
+                 class="avatar" 
+                 alt="Аватар">
+
+            <div style="margin: 20px 0;">
+                <label for="colorPicker">Выберите цвет рамки:</label><br>
+                <input type="color" id="colorPicker" value="#ffff00">
+            </div>
+
+            <div style="margin: 20px 0;">
+                <a href="/"><button>На главную</button></a>
+                <a href="/logout"><button>Выйти</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
